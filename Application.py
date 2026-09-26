@@ -1,3 +1,30 @@
+"""
+N-Queens Solver (Tkinter GUI)
+=============================
+Intro to Artificial Intelligence coursework, KFUPM, 2021.
+
+Solves the N-Queens problem with three different AI search strategies,
+selectable from the GUI:
+
+1. Hill Climbing (A_loop) - steepest-descent local search over conflict
+   count. Implemented below but not currently wired to a GUI button; the
+   menu only exposes Genetic Algorithm and Backtracking.
+2. Genetic Algorithm (clicked_GA / GA_fun / Genetic_loop) - fixed
+   population of 8 candidate boards (8-Queens only), conflict-count
+   fitness, elitist replacement of the weakest candidate with a clone of
+   the fittest, fixed-point crossover, and per-generation random
+   mutation. Runs for up to 7000 generations before restarting.
+3. Backtracking with CSP heuristics (back_tracking / MRV_MCV_LCV) -
+   works for general N (entered in the GUI). Supports toggling Minimum
+   Remaining Values (MRV), Most Constraining Variable (MCV), Least
+   Constraining Value (LCV), Arc Consistency (ARC) and Forward Checking
+   (FC), alone or combined.
+
+See the repo README for a fuller write-up, how to run it, and known
+limitations. This file is left as originally submitted; only this
+header comment was added.
+"""
+
 from tkinter import *
 import random
 import time
