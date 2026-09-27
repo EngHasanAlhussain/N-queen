@@ -11,6 +11,15 @@ with tests.
 Place N queens on an N×N chessboard so that no two queens attack each
 other (no shared row, column, or diagonal).
 
+## AI disclosure
+
+This started as a prototype I submitted for coursework in 2021 (preserved
+as-is in `legacy/`). In 2026 I used AI (Claude) to find and fix real bugs,
+generalize the algorithms to any board size, add the test suite, and
+restructure the code into a proper package -- to bring it up to a standard
+worth sharing publicly and useful to others learning this material. See
+"What changed from the original submission" below for the specifics.
+
 ## Repo structure
 
 ```
